@@ -1,0 +1,9 @@
+<h1>Cac ngay le trong nam</h1>
+{{#each holidays }}
+<div>
+    <h2>{{ @index }}. <a href="{{ this.url }}">{{ this.name }}</a></h2>
+        <img src="{{this.img}}" alt="" style="width: 200px; height: 200px;">
+        <p>{{ this.content }}</p>
+</div>
+    
+{{/each}}
